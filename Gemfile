@@ -26,12 +26,16 @@ gem 'puma', '~> 3.11'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
-
 # ActiveModel::Serializer implementation and Rails hooks
 gem 'active_model_serializers', '~> 0.10.2'
+# A pure ruby implementation of the RFC 7519 OAuth JSON Web Token (JWT) standard.
+gem 'jwt'
+# Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth.
+gem 'devise_token_auth'
+# Translations for the devise gem
+gem 'devise-i18n'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
